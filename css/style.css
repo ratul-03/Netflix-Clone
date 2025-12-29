@@ -17,19 +17,18 @@ body {
 #header {
   position: relative;
   background-image: url('../assets/background.jpg');
-  background-size: cover;
   background-position: center;
-  height: 80vh;
+  height: 85vh;
   background-color: black;
   background-size: max(1200px, 100vw);
   background-repeat: no-repeat;
 }
 
 #header::before {
-  content: "";
+  content: '';
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.45);
+  background: rgba(0, 0, 0, 0.65);
   z-index: 1;
 }
 
@@ -42,7 +41,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 95px;
+  margin-bottom: 140px;
   padding: 20px 50px;
 }
 
@@ -69,8 +68,8 @@ body {
 .header_content {
   display: flex;
   align-items: center;
-  justify-content: center;
   flex-direction: column;
+  text-align: center;
 }
 
 .header_content h2 {
@@ -87,4 +86,125 @@ body {
   text-align: center;
   max-width: 600px;
   font-weight: 600;
+}
+
+.login_details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.login_details p {
+  color: white;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.input_getStarted_btn {
+  display: flex;
+  gap: 10px;
+}
+
+#emailInput {
+  padding: 7px 101px 8px 20px;
+  color: white;
+  font-size: 16px;
+  border-radius: 4px;
+  background-color: rgba(23, 23, 23, 0.7);
+  border: 1px solid rgba(246, 238, 238, 0.5);
+}
+
+#emailInput input {
+  background: transparent;
+}
+
+#emailInput:focus {
+  outline: none;
+  background: transparent;
+  border: 1px solid white;
+}
+
+#emailInput::placeholder {
+  color: gray;
+}
+
+#getStartedBtn {
+  padding: 15px 40px;
+  background: rgb(223, 0, 0);
+  border-radius: 5px;
+  color: white;
+  border: none;
+  font-size: 26px;
+  transition: all ease-in-out 0.4s;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+#getStartedBtn:hover {
+  background: rgb(170, 0, 0);
+}
+
+.seperate {
+  height: 08px;
+  background: gray;
+}
+
+#trending {
+  padding: 20px 100px;
+}
+
+#trending h2 {
+  color: white;
+  font-size: 25px;
+  font-weight: 600;
+}
+
+#trending .cards {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  padding: 10px 20px;
+}
+
+.card1,
+.card2,
+.card3,
+.card4,
+.card5,
+.card6,
+.card7 {
+  margin: 20px 0;
+  position: relative;
+  width: 250px;
+  height: 140px;
+  border-radius: 10px;
+  background-size: cover;
+  background-position: center;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+
+.card1 span,
+.card2 span,
+.card3 span,
+.card4 span,
+.card5 span,
+.card6 span,
+.card7 span {
+  position: absolute;
+  bottom: -150px;
+  left: -15px;
+  color: white;
+  font-size: 100px;
+  font-weight: 600;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+}
+
+.card1:hover,
+.card2:hover,
+.card3:hover,
+.card4:hover,
+.card5:hover,
+.card6:hover {
+  transform: scale(1.05);
 }
